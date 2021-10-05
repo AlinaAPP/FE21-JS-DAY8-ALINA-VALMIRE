@@ -88,8 +88,7 @@ function addToCart (product, index) {
     console.table(cart);
     createRows();
     Total();
-    finalQuantity ();
-    discount ();
+   
 }
 
 // create the function createRows() which will show the items in the cart. This function will go through the elements inside the cart array and print them in the div with id “cart-items”. The function createRows() can be called inside the addToCart() function.
@@ -139,27 +138,18 @@ function createRows () {
             plusQtty(i);
 
             Total();
-            finalQuantity ();
-            discount ();
-
         });
         minus[i].addEventListener("click", function() {
 
             minusQtty(i);
 
             Total();
-            finalQuantity ();
-            discount ();
-
         });
         del[i].addEventListener("click", function() {
 
             deleteItem(i);
 
             Total();
-            finalQuantity ();
-            discount ();
-
         });
 
     }
@@ -204,6 +194,7 @@ function Total() {
     let total = 0;
     let finalQtty = 0;
     let discount = 0;
+    let totalFinal=0;
 
     for (let val of cart) {
 
@@ -212,13 +203,14 @@ function Total() {
 
      if (total > 300) {
         discount = 0.2;
-        total= total  * (1-discount);
+        totalFinal= total  * (1-discount);
         
      }
     }
     document.getElementById("price").innerHTML = total.toFixed(2) + " €" ;
     document.getElementById("numberQtty").innerHTML = finalQtty;
     document.getElementById("discPrice").innerHTML = discount;
+    document.getElementById("totalAfterDiscountPrice").innerHTML = totalFinal.toFixed(2) + " €" ;
    
 }
 

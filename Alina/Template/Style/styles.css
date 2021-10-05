@@ -75,7 +75,8 @@ body {
 
 .cart-total ,
 .cart-totalQtty,
-.cart-discount {
+.cart-discount,
+.cart-totalAfterDiscount {
     text-align: end;
     margin-top: 10px;
     margin-right: 10px;
@@ -83,7 +84,8 @@ body {
 
 .cart-total-title,
 .cart-totalQtty-title,
-.cart-discount-title {
+.cart-discount-title,
+.cart-totalAfterDiscount-title {
     font-weight: bold;
     font-size: 1.5em;
     color: #5aa3d8;

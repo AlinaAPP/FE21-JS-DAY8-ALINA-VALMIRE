@@ -44,26 +44,33 @@
             <div id="cart-items">
                 <!-- empty cart -->
             </div>
-            <div id="total" class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span id="price" class="cart-total-price h4">€0.00</span>
+            <div>
+                <div id="total" class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span id="price" class="cart-total-price h6">€0.00</span>
+                </div>
+                
+                <!-- added starts here -->
+                <div id="totalQtty" class="cart-totalQtty">
+                    <strong class="cart-totalQtty-title">FinalQuantity</strong>
+                    <span id="numberQtty" class="cart-totalQtty-number h6">0</span>
+                </div>
+                <div id="discount" class="cart-discount">
+                    <strong class="cart-discount-title">Discount</strong>
+                    <span id="discPrice" class="cart-discount-price h6">€0.00</span>
+                </div>
+                <div id="totalAfterDiscount" class="cart-totalAfterDiscount">
+                    <strong class="cart-totalAfterDiscount-title">Final Price</strong>
+                    <span id="totalAfterDiscountPrice" class="cart-totalAfterDiscount-price h6">€0.00</span>
+                </div>
+                <!-- added finishes here-->
+    
+                <div class="d-flex justify-content-center m-4">
+                    <button id="btn-purchase" class="btn btn-primary btn-purchase" type="button">Check out <br><i
+                            class="fa fa-handshake-o" style="font-size:36px;color:white"></i></button>
+                </div>
             </div>
             
-            <!-- added starts here -->
-            <div id="totalQtty" class="cart-totalQtty">
-                <strong class="cart-totalQtty-title">FinalQuantity</strong>
-                <span id="numberQtty" class="cart-totalQtty-number h4">0</span>
-            </div>
-            <div id="discount" class="cart-discount">
-                <strong class="cart-discount-title">Discount</strong>
-                <span id="discPrice" class="cart-discount-price h4">€0.00</span>
-            </div>
-            <!-- added finishes here-->
-
-            <div class="d-flex justify-content-center m-4">
-                <button id="btn-purchase" class="btn btn-primary btn-purchase" type="button">Check out <br><i
-                        class="fa fa-handshake-o" style="font-size:36px;color:white"></i></button>
-            </div>
         </div>
     </div>
 
