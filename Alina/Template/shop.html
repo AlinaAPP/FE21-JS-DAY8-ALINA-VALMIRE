@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="Style/styles.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="d-flex justify-content-center align-items-center bg-dark text-light text-center py-2">
+            <img src="img/logoflowers.png" class="logo" alt="logo flowers">
+            <h1>Flowers</h1>
+        </div> 
+        <nav class="navbar bg-secondary navbar-secondary py-0">
+            <div class="container">  
+                <a class="navbar-brand text-decoration-none text-white ms-start" href="#">Products</a>
+                <a class="navbar-brand text-decoration-none text-white me-end" href="#">Delivery</a>
+            </div>       
+        </nav>
+    </header>
+
+
+
+    <!-- here ends navbar -->
+    <div class="container">
+        <h2 class="text-center w-100 my-5 mx-1 p-3 h1 bg-light">Flowers</h2>
+        <div class="products row"></div>
+
+        <!--cart starts here  -->
+        <div id="cart" class="mt-5">
+            <div class="cart-header h4  border-bottom row">
+                <span class="cart-item col-6 mb-3 ">Bouquet</span>
+                <span class="cart-price col-3 mb-3">Price/bouquet</span>
+                <span class="col-3 mb-3">Quantity</span>
+            </div>
+            <div id="cart-items">
+                <!-- empty cart -->
+            </div>
+            <div id="total" class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span id="price" class="cart-total-price h4">€0.00</span>
+            </div>
+            
+            <!-- added starts here -->
+            <div id="totalQtty" class="cart-totalQtty">
+                <strong class="cart-totalQtty-title">FinalQuantity</strong>
+                <span id="numberQtty" class="cart-totalQtty-number h4">0</span>
+            </div>
+            <div id="discount" class="cart-discount">
+                <strong class="cart-discount-title">Discount</strong>
+                <span id="discPrice" class="cart-discount-price h4">€0.00</span>
+            </div>
+            <!-- added finishes here-->
+
+            <div class="d-flex justify-content-center m-4">
+                <button id="btn-purchase" class="btn btn-primary btn-purchase" type="button">Check out <br><i
+                        class="fa fa-handshake-o" style="font-size:36px;color:white"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-1 py-xxl-3">
+        <p>Flowers</p>
+        <p>&copy;My Flowers, 2021</p>
+        
+    </footer>
+    <!--<script src="Script/cart.js"></script> -->
+    <script src="Script/cart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+
+<!-- <i class="minus fa fa-minus-circle my-auto" ></i>            
+
+            <div class="cart-quantity p-4 h4">${val.qtty}</div>            
+
+            <i class="plus fa fa-plus-circle my-auto"></i>        
+
+            <button class="del btn btn-danger rounded-circle  my-auto ms-3 fw-bold" type="button"> X </button>  -->
