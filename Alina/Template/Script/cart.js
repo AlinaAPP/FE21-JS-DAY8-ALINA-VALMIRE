@@ -216,7 +216,7 @@ function Total() {
         
      }
     }
-    document.getElementById("price").innerHTML = total + " €" ;
+    document.getElementById("price").innerHTML = total.toFixed(2) + " €" ;
     document.getElementById("numberQtty").innerHTML = finalQtty;
     document.getElementById("discPrice").innerHTML = discount;
    
